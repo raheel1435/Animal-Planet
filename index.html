@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animal Planet - Explore the world of animals and wildlife with us.">
+    <meta name="keywords" content="zoo, animal home, animal planet, wildlife, animals">
+    <meta name="author" content="Raheel Shan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Animal Planet</title>
+</head>
+<body>
+    <header class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">Animal Planet</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Category</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="search-column">
+            <div class="search">
+                <!-- one issue that is been mentioned by "wave"<label for="search-input">Search Animals</label> -->
+                <input id="search-input" class="srch" type="text" placeholder="Search here...">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+
+        <div class="image-column">
+            <div class="image-grid">
+                <!-- Antelopes -->
+                <div class="image-item" onclick="openModal('Antelopes', 'Mammal', 'Brown', 'Graceful and fast animals.', '10-25 Year (Species Dependent)', 'assets/images/Antelopes.jpg')">   <!--role="button" tabindex="0" onekeydown="if(event.key === 'Enter' || event.key === '') openModal(...)"  OR change fron div to Button and put type="button" "<button type="button"........</button>"-->
+                    
+                    <img src="assets/images/Antelopes.jpg" alt="Antelopes">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Antelopes</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> Graceful and fast animals.</p>
+                        <p><strong>Lifespan:</strong> 10-25 Year (Species Dependent)</p>
+                    </div>
+                </div>
+
+                <!-- Barn Owl -->
+                <div class="image-item" onclick="openModal('Barn Owl', 'Bird', 'White and Brown', 'A nocturnal bird of prey.', '4-6 years (Wild), 15-20 years (Captivity)', 'assets/images/Barn-Owl.jpg')">
+                    <img src="assets/images/Barn-Owl.jpg" alt="Barn Owl">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Barn Owl</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> White and Brown</p>
+                        <p><strong>Description:</strong> A nocturnal bird of prey.</p>
+                        <p><strong>Lifespan:</strong> 4-6 years (Wild), 15-20 years (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Rhinoceros bicornis -->
+                <div class="image-item" onclick="openModal('Black Rhino', 'Mammal', 'Gray', 'A critically endangered species.', '35-40 years', 'assets/images/black-rhinoceros.jpg')">
+                    <img src="assets/images/black-rhinoceros.jpg" alt="Black Rhino">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Black Rhino</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Gray</p>
+                        <p><strong>Description:</strong> A critically endangered species.</p>
+                        <p><strong>Lifespan:</strong> 35-40 years</p>
+                    </div>
+                </div>
+
+                <!-- Rhinoceros unicornis -->
+                <div class="image-item" onclick="openModal('Unicornis *(Unicorn)', 'Mammal', 'Gray to brownish-gray', 'A critically endangered species.', '35-45 years', 'assets/images/rhinoceros-unicornis.jpg')">
+                    <img src="assets/images/rhinoceros-unicornis.jpg" alt="rhinoceros unicornis (Unicorn)">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> rhinoceros-unicornis (Unicorn)</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Gray to brownish-gray</p>
+                        <p><strong>Description:</strong> Population has increased due to strong protection efforts</p>
+                        <p><strong>Average Lifespan:</strong> 35-45 years</p>
+                    </div>
+                </div>
+
+                <!-- Brown Lions -->
+                <div class="image-item" onclick="openModal('Brown Lions', 'Mammal', 'Brown', 'The kings of the savannah.', '10-14 years (wild), 20 year (Captivity)', 'assets/images/Brown-Lions.jpg')">
+                    <img src="assets/images/Brown-Lions.jpg" alt="Brown Lions">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Brown Lions</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> The kings of the savannah.</p>
+                        <p><strong>Lifespan:</strong> 10-14 years (wild), 20 year (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Brown Highland Cattle -->
+                <div class="image-item" onclick="openModal('Brown Highland Cattle', 'Mammal', 'Brown', 'A hardy breed of cattle.', '15-20 years', 'assets/images/Brown-Highland-Cattle.jpg')">
+                    <img src="assets/images/Brown-Highland-Cattle.jpg" alt="Brown Highland Cattle">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Brown Highland Cattle</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A hardy breed of cattle.</p>
+                        <p><strong>Lifespan:</strong> 15-20 years</p>
+                    </div>
+                </div>
+
+                <!-- Brown Lama -->
+                <div class="image-item" onclick="openModal('Brown Lama', 'Mammal', 'Brown', 'A domesticated animal from South America.', '15-25 years', 'assets/images/Brown-Lama.jpg')">
+                    <img src="assets/images/Brown-Lama.jpg" alt="Brown Lama">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Brown Lama</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A domesticated animal from South America.</p>
+                        <p><strong>Lifespan:</strong> 15-25 years</p>
+                    </div>
+                </div>
+
+                <!-- Brown Squirrel -->
+                <div class="image-item" onclick="openModal('Brown Squirrel', 'Mammal', 'Brown', 'A small and agile animal.', '6-12 years (Wild), 15 years (Captivity)', 'assets/images/Brown-squirrel.jpg')">
+                    <img src="assets/images/Brown-squirrel.jpg" alt="Brown Squirrel">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Brown Squirrel</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A small and agile animal.</p>
+                        <p><strong>Lifespan:</strong> 6-12 years (Wild), 15 years (Captivity) </p>
+                    </div>
+                </div>
+
+                <!-- Chameleon -->
+                <div class="image-item" onclick="openModal('Chameleon', 'Reptile', 'Green', 'A lizard known for changing colors.', 'Typical species: 5–7 years, Some larger species: up to 10 years ', 'assets/images/Chameleon.jpg')">
+                    <img src="assets/images/Chameleon.jpg" alt="Chameleon">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Chameleon</p>
+                        <p><strong>Type:</strong> Reptile</p>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Description:</strong> A lizard known for changing colors.</p>
+                        <p><strong>Lifespan:</strong> Typical species: 5–7 years, Some larger species: up to 10 years </p>
+                    </div>
+                </div>
+
+                <!-- Deer -->
+                <div class="image-item" onclick="openModal('Deer', 'Mammal', 'Brown', 'A graceful forest animal.', '10-20 years (Species Dependent)', 'assets/images/deer.jpg')">
+                    <img src="assets/images/deer.jpg" alt="Deer">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Deer</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A graceful forest animal.</p>
+                        <p><strong>Lifespan:</strong> 10-20 years (Species Dependent)</p>
+                    </div>
+                </div>
+
+                <!-- Elephant -->
+                <div class="image-item" onclick="openModal('Elephant', 'Mammal', 'Gray', 'A large, intelligent animal.', '60-70 years', 'assets/images/Elephant.jpg')">
+                    <img src="assets/images/Elephant.jpg" alt="Elephant">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Elephant</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Gray</p>
+                        <p><strong>Description:</strong> A large, intelligent animal.</p>
+                        <p><strong>Lifespan:</strong> 60-70 years</p>
+                    </div>
+                </div>
+
+                <!-- Fennec Fox -->
+                <div class="image-item" onclick="openModal('Fennec Fox', 'Mammal', 'Sandy', 'A small fox with large ears.', '10-12 years (Wild), 14 years (Captivity)', 'assets/images/Fennec-Fox.jpg')">
+                    <img src="assets/images/Fennec-Fox.jpg" alt="Fennec Fox">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Fennec Fox</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Sandy</p>
+                        <p><strong>Description:</strong> A small fox with large ears.</p>
+                        <p><strong>Lifespan:</strong> 10-12 years (Wild), 14 years (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Flamingos -->
+                <div class="image-item" onclick="openModal('Flamingos', 'Bird', 'Pink', 'Tall, pink wading birds.', '20–30 years (some exceed 40 in captivity)', 'assets/images/flamingos.jpg')">
+                    <img src="assets/images/flamingos.jpg" alt="Flamingos">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Flamingos</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> Pink</p>
+                        <p><strong>Description:</strong> Tall, pink wading birds.</p>
+                        <p><strong>Lifespan:</strong> 20–30 years (some exceed 40 in captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Giraffe -->
+                <div class="image-item" onclick="openModal('Giraffe', 'Mammal', 'Yellow with brown spots', 'The tallest land animal.', '20-25 years (Wild), 28 years (Captivity)', 'assets/images/giraffe.jpg')">
+                    <img src="assets/images/giraffe.jpg" alt="Giraffe">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Giraffe</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Yellow with brown spots</p>
+                        <p><strong>Description:</strong> The tallest land animal.</p>
+                        <p><strong>Lifespan:</strong> 20-25 years (Wild), 28 years (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Hedgehog -->
+                <div class="image-item" onclick="openModal('Hedgehog', 'Mammal', 'Brown', 'A small, spiny mammal.', '2-5 years (Wild), 8-10 years (Captivity)', 'assets/images/Hedgehog.jpg')">
+                    <img src="assets/images/Hedgehog.jpg" alt="Hedgehog">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Hedgehog</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A small, spiny mammal.</p>
+                        <p><strong>Lifespan:</strong> 2-5 years (Wild), 8-10 years (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Horse -->
+                <div class="image-item" onclick="openModal('Horse', 'Mammal', 'Brown', 'A strong and majestic animal.', '25-30 years', 'assets/images/horse.jpg')">
+                    <img src="assets/images/horse.jpg" alt="Horse">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Horse</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A strong and majestic animal.</p>
+                        <p><strong>Lifespan:</strong> 25-30 years</p>
+                    </div>
+                </div>
+
+                <!-- Lion -->
+                <div class="image-item" onclick="openModal('Lion', 'Mammal', 'Brown', 'The king of the jungle.', '10-14 years (Wild), 20 years (Captivity)', 'assets/images/lion.jpg')">
+                    <img src="assets/images/lion.jpg" alt="Lion">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Lion</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> The king of the jungle.</p>
+                        <p><strong>Lifespan:</strong> 10-14 years (Wild), 20 years (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Owl -->
+                <div class="image-item" onclick="openModal('Long Eared Owl', 'Bird', 'Brown', 'A nocturnal bird of prey.', '10-15 years', 'assets/images/Long-Eared-Owl.jpg')">
+                    <img src="assets/images/Long-Eared-Owl.jpg" alt="Long Eared Owl">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Long Eared Owl</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> Brown</p>
+                        <p><strong>Description:</strong> A nocturnal bird of prey.</p>
+                        <p><strong>Lifespan:</strong> 10-15 years</p>
+                    </div>
+                </div>
+
+                <!-- Parrot -->
+                <div class="image-item" onclick="openModal('Parrot', 'Bird', 'Green', 'A colorful and talkative bird.', '15-30 years (Small Parrots), 40-60+ years (Larger Parrots)', 'assets/images/parrot.jpg')">
+                    <img src="assets/images/parrot.jpg" alt="Parrot">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Parrot</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> Green</p>
+                        <p><strong>Description:</strong> A colorful and talkative bird.</p>
+                        <p><strong>Lifespan:</strong> 15-30 years (Small Parrots), 40-60+ years (Larger Parrots)</p>
+                    </div>
+                </div>
+
+                <!-- Penguins -->
+                <div class="image-item" onclick="openModal('Penguins', 'Bird', 'Black and White', 'Flightless birds from Antarctica.', '20–30 years (some exceed 40 in captivity)', 'assets/images/penguins.jpg')">
+                    <img src="assets/images/penguins.jpg" alt="Penguins">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Penguins</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> Black and White</p>
+                        <p><strong>Description:</strong> Flightless birds from Antarctica.</p>
+                        <p><strong>Lifespan:</strong> 20–30 years (some exceed 40 in captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Red Ara Parrot -->
+                <div class="image-item" onclick="openModal('Red Ara Parrot (Macaw)', 'Bird', 'Red', 'A vibrant and colorful bird.', '50-60 years', 'assets/images/Red-Ara-Parrot.jpg')">
+                    <img src="assets/images/Red-Ara-Parrot.jpg" alt="Red Ara Parrot (Macaw)">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Red Ara Parrot (Macaw)</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> Red</p>
+                        <p><strong>Description:</strong> A vibrant and colorful bird.</p>
+                        <p><strong>Lifespan:</strong> 50-60 years</p>
+                    </div>
+                </div>
+
+                <!-- Tiger -->
+                <div class="image-item" onclick="openModal('Tiger', 'Mammal', 'Orange with black stripes', 'A fierce and powerful predator.', '10-15 years (Wild), 20-25 years (Captivity)', 'assets/images/tiger.jpg')">
+                    <img src="assets/images/tiger.jpg" alt="Tiger">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Tiger</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Orange with black stripes</p>
+                        <p><strong>Description:</strong> A fierce and powerful predator.</p>
+                        <p><strong>Lifespan:</strong> 10-15 years (Wild), 20-25 years (Captivity)</p>
+                    </div>
+                </div>
+
+                <!-- Toucan -->
+                <div class="image-item" onclick="openModal('Toucan', 'Bird', 'Black with a colorful beak', 'A tropical bird with a large beak.', '15-20 years', 'assets/images/Toucan.jpg')">
+                    <img src="assets/images/Toucan.jpg" alt="Toucan">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Toucan</p>
+                        <p><strong>Type:</strong> Bird</p>
+                        <p><strong>Color:</strong> Black with a colorful beak</p>
+                        <p><strong>Description:</strong> A tropical bird with a large beak.</p>
+                        <p><strong>Lifespan:</strong> 15-20 years</p>
+                    </div>
+                </div>
+
+                <!-- White Reindeer -->
+                <div class="image-item" onclick="openModal('White Reindeer', 'Mammal', 'White', 'A rare and majestic reindeer.', '15-20 years', 'assets/images/White-Reindeer.jpg')">
+                    <img src="assets/images/White-Reindeer.jpg" alt="White Reindeer">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> White Reindeer</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> White</p>
+                        <p><strong>Description:</strong> A rare and majestic reindeer.</p>
+                        <p><strong>Lifespan:</strong> 15-20 years</p>
+                    </div>
+                </div>
+
+                <!-- Zebra -->
+                <div class="image-item" onclick="openModal('Zebra', 'Mammal', 'Black and White', 'A striped animal from Africa.', '20-25 years (Wild), 30 years (Captivity)', 'assets/images/zebra.jpg')">
+                    <img src="assets/images/zebra.jpg" alt="Zebra">
+                    <div class="detail-box">
+                        <p><strong>Name:</strong> Zebra</p>
+                        <p><strong>Type:</strong> Mammal</p>
+                        <p><strong>Color:</strong> Black and White</p>
+                        <p><strong>Description:</strong> A striped animal from Africa.</p>
+                        <p><strong>Lifespan:</strong> 20-25 years (Wild), 30 years (Captivity)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()" aria-label="Close dialog">&times;</button>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="Modal Image">
+            </div>
+            <div id="modalDetails">
+                <p><strong>Name:</strong> <span id="modalName"></span></p>
+                <p><strong>Type:</strong> <span id="modalType"></span></p>
+                <p><strong>Color:</strong> <span id="modalColor"></span></p>
+                <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+                <p><strong>Lifespan:</strong> <span id="modalYear"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on:
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> |
+            <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a> |
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        </p>
+    </footer>
+
+       <script src="assets/script.js" defer></script>
+       <!--defer guarantees: That HTML loads first and JS runs after the DOM is fully parsed-->
+</body>
+</html>
